@@ -1,0 +1,33 @@
+{
+  "name": "rxjs-learn-ts",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack --watch",
+    "build:ts": "tsc",
+    "build:ts-watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzacong/rxjs-learn-ts.git"
+  },
+  "author": "Zac Ong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zzacong/rxjs-learn-ts/issues"
+  },
+  "homepage": "https://github.com/zzacong/rxjs-learn-ts#readme",
+  "dependencies": {
+    "rxjs": "^7.3.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "style-loader": "^3.2.1",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.4.2",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
