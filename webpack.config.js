@@ -3,9 +3,13 @@ const path = require('path')
 module.exports = {
   mode: 'development',
   entry: {
-    app: './src/app.ts',
+    observables: './src/observables.ts',
   },
   devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
+    hot: true,
+  },
   watchOptions: {
     ignored: ['**/node_modules'],
   },
