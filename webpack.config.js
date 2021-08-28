@@ -4,6 +4,8 @@ module.exports = {
   mode: 'development',
   entry: {
     observables: './src/observables.ts',
+    subjects: './src/subjects.ts',
+    operators: './src/operators.ts',
   },
   devtool: 'inline-source-map',
   devServer: {

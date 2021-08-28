@@ -6,7 +6,7 @@
   "scripts": {
     "webpack": "webpack",
     "webpack:watch": "webpack --watch",
-    "webpack:serve": "webpack serve --open",
+    "webpack:serve": "webpack serve",
     "build:ts": "tsc",
     "build:ts-watch": "tsc -w"
   },
