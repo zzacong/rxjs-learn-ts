@@ -4,9 +4,12 @@
   "description": "",
   "private": true,
   "scripts": {
-    "webpack": "webpack",
+    "webpack:build": "webpack",
     "webpack:watch": "webpack --watch",
     "webpack:serve": "webpack serve",
+    "parcel:serve": "parcel ./src/index.html --dist-dir out",
+    "parcel:watch": "parcel watch ./src/index.html --dist-dir out",
+    "parcel:build": "parcel build ./src/index.html --dist-dir out",
     "build:ts": "tsc",
     "build:ts-watch": "tsc -w"
   },
@@ -25,6 +28,7 @@
   },
   "devDependencies": {
     "css-loader": "^6.2.0",
+    "parcel": "^2.0.0-rc.0",
     "style-loader": "^3.2.1",
     "ts-loader": "^9.2.5",
     "typescript": "^4.4.2",
