@@ -1,6 +1,7 @@
 import { fromEvent, Observable } from 'rxjs'
 import { share } from 'rxjs/operators'
 
+import { addItem } from './utils'
 import './style.css'
 
 const observable = new Observable(observer => {
@@ -58,10 +59,3 @@ setTimeout(() => {
 // setTimeout(() => {
 //   const subscription = observable2.subscribe(x => addItem(x))
 // }, 2000)
-
-function addItem(val: any) {
-  const node = document.createElement('li')
-  const textnode = document.createTextNode(val)
-  node.appendChild(textnode)
-  document.querySelector('#output')?.appendChild(node)
-}

@@ -1,5 +1,6 @@
 import { AsyncSubject, BehaviorSubject, ReplaySubject, Subject } from 'rxjs'
 
+import { addItem } from './utils'
 import './style.css'
 
 /**
@@ -98,10 +99,3 @@ import './style.css'
 //   const observer2 = asyncSub.subscribe(data => addItem(`Observer 2: ${data}`))
 //   asyncSub.complete()
 // }, 500)
-
-function addItem(val: any) {
-  const node = document.createElement('li')
-  const textnode = document.createTextNode(val)
-  node.appendChild(textnode)
-  document.querySelector('#output')?.appendChild(node)
-}
